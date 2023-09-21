@@ -21,6 +21,8 @@ function CarForm(){
     const handleSubmit=(event)=>{
        event.preventDefault();
        dispatch ( addCar({name,cost}))
+       dispatch(changeCost(0));
+       dispatch(changeName(""));
    
     }
     return <div className="car-forn panel">
